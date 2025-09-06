@@ -1,0 +1,57 @@
+2025-09-06 13:17:51,655 - INFO - Script iniciado. Tentando carregar as configurações.
+2025-09-06 13:19:35,470 - INFO - Arquivo de configuração 'config.yaml' carregado com sucesso.
+2025-09-06 13:25:26,191 - INFO - Fazendo requisição para a API para a moeda base: USD
+2025-09-06 13:25:26,748 - INFO - Resposta da API recebida e decodificada com sucesso.
+2025-09-06 13:25:26,748 - INFO - Taxas de conversão extraídas com sucesso.
+2025-09-06 13:25:26,748 - INFO - Cotação encontrada: 1 USD = 5.4412 BRL
+2025-09-06 13:25:26,748 - INFO - Cotação encontrada: 1 USD = 0.8537 EUR
+2025-09-06 13:25:26,748 - INFO - Script finalizado.
+2025-09-06 13:36:10,883 - INFO - Fazendo requisição para a API para a moeda base: USD
+2025-09-06 13:36:11,104 - INFO - Resposta da API recebida e decodificada com sucesso.
+2025-09-06 13:36:11,104 - ERROR - Ocorreu um erro ao tentar salvar o arquivo JSON: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-06 13:36:11,104 - INFO - Taxas de conversão extraídas com sucesso.
+2025-09-06 13:36:11,104 - INFO - Cotação encontrada: 1 USD = 5.4412 BRL
+2025-09-06 13:36:11,104 - INFO - Cotação encontrada: 1 USD = 0.8537 EUR
+2025-09-06 13:36:11,104 - INFO - Script finalizado.
+2025-09-06 13:53:51,161 - INFO - Fazendo requisição para a API para a moeda base: USD
+2025-09-06 13:53:51,400 - INFO - Resposta da API recebida e decodificada com sucesso.
+2025-09-06 13:53:51,401 - ERROR - Ocorreu um erro ao tentar salvar o arquivo JSON: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-06 13:53:51,401 - INFO - Taxas de conversão extraídas com sucesso.
+2025-09-06 13:53:51,401 - INFO - Cotação encontrada: 1 USD = 5.4412 BRL
+2025-09-06 13:53:51,401 - INFO - Cotação encontrada: 1 USD = 0.8537 EUR
+2025-09-06 13:53:51,401 - INFO - Script finalizado.
+2025-09-06 13:55:06,028 - INFO - Fazendo requisição para a API para a moeda base: USD
+2025-09-06 13:55:06,327 - INFO - Resposta da API recebida e decodificada com sucesso.
+2025-09-06 13:55:06,327 - ERROR - Ocorreu um erro ao tentar salvar o arquivo JSON: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-06 13:55:06,327 - INFO - Taxas de conversão extraídas com sucesso.
+2025-09-06 13:55:06,327 - INFO - Cotação encontrada: 1 USD = 5.4412 BRL
+2025-09-06 13:55:06,327 - INFO - Cotação encontrada: 1 USD = 0.8537 EUR
+2025-09-06 13:55:06,327 - INFO - Script finalizado.
+2025-09-06 13:58:04,833 - INFO - Fazendo requisição para a API para a moeda base: USD
+2025-09-06 13:58:05,028 - INFO - Resposta da API recebida e decodificada com sucesso.
+2025-09-06 13:58:05,028 - ERROR - Ocorreu um erro ao tentar salvar o arquivo JSON: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-06 13:58:05,028 - INFO - Taxas de conversão extraídas com sucesso.
+2025-09-06 13:58:05,028 - INFO - Cotação encontrada: 1 USD = 5.4412 BRL
+2025-09-06 13:58:05,028 - INFO - Cotação encontrada: 1 USD = 0.8537 EUR
+2025-09-06 13:58:05,028 - INFO - Script finalizado.
+2025-09-06 13:58:31,524 - INFO - Fazendo requisição para a API para a moeda base: USD
+2025-09-06 13:58:32,134 - INFO - Resposta da API recebida e decodificada com sucesso.
+2025-09-06 13:58:32,135 - INFO - Salvando resposta bruta da API no arquivo: api_response_20250906-135832.json
+2025-09-06 13:58:32,135 - INFO - Dados salvos com sucesso em 'api_response_20250906-135832.json'.
+2025-09-06 13:58:32,135 - INFO - Taxas de conversão extraídas com sucesso.
+2025-09-06 13:58:32,135 - INFO - Cotação encontrada: 1 USD = 5.4412 BRL
+2025-09-06 13:58:32,135 - INFO - Cotação encontrada: 1 USD = 0.8537 EUR
+2025-09-06 13:58:32,135 - INFO - Script finalizado.
+2025-09-06 14:05:15,991 - INFO - Script finalizado.
+2025-09-06 14:10:27,005 - INFO - Script iniciado. Tentando carregar as configurações.
+2025-09-06 14:10:27,011 - INFO - Arquivo de configuração 'config.yaml' carregado com sucesso.
+2025-09-06 14:10:27,026 - INFO - Script finalizado.
+2025-09-06 14:14:57,117 - INFO - Script finalizado.
+2025-09-06 14:14:59,865 - INFO - Fazendo requisição para a API para a moeda base: USD
+2025-09-06 14:15:00,467 - ERROR - Falha na comunicação com a API. Verifique a conexão ou a URL.
+Traceback (most recent call last):
+  File "C:\Users\Carlos Vinicius\AppData\Local\Temp\ipykernel_29576\3884445455.py", line 6, in resultado_api
+    response.raise_for_status()
+  File "c:\Users\Carlos Vinicius\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://v6.exchangerate-api.com/v6/11e2e394e9cc50f68fded112/history/USD/2025/9/1
