@@ -40,12 +40,14 @@ Linguagem: Python 3.9+
 O projeto está organizado da seguinte forma para garantir a separação de responsabilidades e a clareza do pipeline:
 
 /
-├── src/
+├── Script/
 │   ├── LLM.py                  # Script de enriquecimento com LLM               
 |   ├── Extract.py              # Script de coleta de dados
 |   ├── Refined.py              # Script de normalização
 |   ├── Trusted.py              # Script de carga para Parquet
-├── main.py                     # Orquestrador do pipeline (opcional)
+├── main.py                     # Orquestrador do pipeline
+├── YAML/
+│   ├── config.yaml             # Local onde fica o arquivos com a keys  
 ├── Raw/
 ├── Trusted/
 ├── Refined/
@@ -53,23 +55,17 @@ O projeto está organizado da seguinte forma para garantir a separação de resp
 ├── .gitignore
 └── README.md
 
+***
+Projeto fica na pasta 
+**C:\Users\Carlos Vinicius\Documents\Impacta\Aulas\Python Programming for Data Engineers v2**
+E necessario criar a estrutura de pastas conforme acima.
 
-exchange_rate_etl/
-├── config/
-│   └── config.yaml
-├── raw/
-├── silver/
-├── gold/
-├── src/
-│   ├── __init__.py
-│   ├── ingestion.py
-│   ├── transformation.py
-│   ├── loading.py
-│   └── utils.py
-│   └── llm_integration.py
-├── tests/
-│   └── test_unit.py
-├── .env
-├── main.py
-├── requirements.txt
-└── README.md
+clone o repositorio
+
+Git clone https://github.com/carlos-jesus98/Python-Programming-for-Data-Engineers
+
+Execute o Main.py(Como ele e o orquestrador, tudo ira rodar em sequencia) no cmd.
+
+python main.py
+
+no proprio cmd tera o retorno da LLM
