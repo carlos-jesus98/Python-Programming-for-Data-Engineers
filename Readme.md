@@ -52,3 +52,24 @@ O projeto está organizado da seguinte forma para garantir a separação de resp
 ├── Log.log                     # Log de execucoes
 ├── .gitignore
 └── README.md
+
+
+exchange_rate_etl/
+├── config/
+│   └── config.yaml
+├── raw/
+├── silver/
+├── gold/
+├── src/
+│   ├── __init__.py
+│   ├── ingestion.py
+│   ├── transformation.py
+│   ├── loading.py
+│   └── utils.py
+│   └── llm_integration.py
+├── tests/
+│   └── test_unit.py
+├── .env
+├── main.py
+├── requirements.txt
+└── README.md
