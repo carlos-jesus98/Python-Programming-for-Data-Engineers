@@ -14,4 +14,26 @@ Enriquecimento com LLM: Geração de resumos executivos e insights em linguagem 
 
 Logging Estruturado: Monitoramento completo do pipeline com logs detalhados para cada etapa.
 
-Testes Unitários: Garantia de qualidade e integridade dos dados através de testes automatizados.
+***
+🛠️ Tecnologias Utilizadas
+Linguagem: Python 3.9+
+
+Bibliotecas Principais:
+
+requests: Para requisições HTTP à API.
+
+pandas: Para manipulação e transformação de dados.
+
+pyarrow: Para escrita de arquivos em formato Parquet.
+
+python-dotenv: Para gerenciamento de variáveis de ambiente.
+
+openai: Para integração com a API do ChatGPT ou outro LLM.
+
+pytest: Para execução de testes unitários.
+
+structlog ou logging: Para logging estruturado.
+
+Ferramentas:
+
+Git & GitHub: Para versionamento de código.
