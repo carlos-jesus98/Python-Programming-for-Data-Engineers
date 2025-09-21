@@ -1,6 +1,6 @@
 Esse projeto extrai dados da API  https://www.exchangerate-api.com/, gera as 3 camadas da arquitetura medalhao (bronze,silver e gold), e conecta com uma API de LLM para geracao de Insights
 
-Projeto por Carlos Jesus
+Projeto por **Carlos Jesus**
 
 
 ✨ Funcionalidades
