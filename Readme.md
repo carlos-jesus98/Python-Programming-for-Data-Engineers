@@ -4,36 +4,51 @@ Projeto por Carlos Jesus
 
 
 ✨ Funcionalidades
-Ingestão (Ingest): Coleta diária de dados de cotações da API ExchangeRate-API.
+**Ingestão (Ingest):** Coleta diária de dados de cotações da API ExchangeRate-API.
 
-Transformação (Transform): Normalização e limpeza dos dados, garantindo a qualidade e o formato adequado para análise.
+**Transformação (Transform):** Normalização e limpeza dos dados, garantindo a qualidade e o formato adequado para análise.
 
-Carga (Load): Armazenamento dos dados processados em formato Parquet otimizado para analytics.
+**Carga (Load):** Armazenamento dos dados processados em formato Parquet otimizado para analytics.
 
-Enriquecimento com LLM: Geração de resumos executivos e insights em linguagem natural sobre as variações cambiais diárias.
+**Enriquecimento com LLM:** Geração de resumos executivos e insights em linguagem natural sobre as variações cambiais diárias.
 
-Logging Estruturado: Monitoramento completo do pipeline com logs detalhados para cada etapa.
+**Logging Estruturado:** Monitoramento completo do pipeline com logs detalhados para cada etapa.
 
 ***
 🛠️ Tecnologias Utilizadas
 Linguagem: Python 3.9+
 
-Bibliotecas Principais:
+**Bibliotecas Principais:**
 
-requests: Para requisições HTTP à API.
+**requests:** Para requisições HTTP à API.
 
-pandas: Para manipulação e transformação de dados.
+**pandas:** Para manipulação e transformação de dados.
 
-pyarrow: Para escrita de arquivos em formato Parquet.
+**yaml:** Para captura das principais keys com seguranca.
 
-python-dotenv: Para gerenciamento de variáveis de ambiente.
+**logging:** Para gerar logs de execucao e controle.
 
-openai: Para integração com a API do ChatGPT ou outro LLM.
+**google.generativeai:** Para conexao com o Gemini.
 
-pytest: Para execução de testes unitários.
+**Ferramentas:**
 
-structlog ou logging: Para logging estruturado.
+**Git & GitHub:** Para versionamento de código.
 
-Ferramentas:
+***
 
-Git & GitHub: Para versionamento de código.
+📂 Estrutura do Projeto
+O projeto está organizado da seguinte forma para garantir a separação de responsabilidades e a clareza do pipeline:
+
+/
+├── src/
+│   ├── LLM.py                  # Script de enriquecimento com LLM               
+|   ├── Extract.py              # Script de coleta de dados
+|   ├── Refined.py              # Script de normalização
+|   ├── Trusted.py              # Script de carga para Parquet
+├── main.py                     # Orquestrador do pipeline (opcional)
+├── Raw/
+├── Trusted/
+├── Refined/
+├── Log.log                     # Log de execucoes
+├── .gitignore
+└── README.md

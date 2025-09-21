@@ -10,7 +10,7 @@ class Extract:
     logging.basicConfig(
         level=logging.INFO, 
         format='%(asctime)s - %(levelname)s - %(message)s', 
-        filename='Raw.log', 
+        filename='Log.log', 
         encoding='utf-8', 
         filemode='a'
     )
