@@ -22,6 +22,7 @@ class Refined:
         with open(full_path,'r', encoding='utf-8') as arquivo:
             raw_data = json.load(arquivo)
         return raw_data
+        logging.info("json Ccom a moeda escolhida lido com sucesso.")
     
     def trans_json(self,entrada):
         base_currency = entrada.get("base_code")
@@ -42,3 +43,4 @@ class Refined:
         truste_file = f"{base_currency}.csv"
         trusted_file_path = trusted_path / truste_file
         df.to_csv(trusted_file_path,sep='|')
+        logging.info("CSV da camada refined gerado com sucesso")
